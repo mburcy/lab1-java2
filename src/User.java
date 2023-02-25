@@ -1,10 +1,24 @@
 import java.io.Serializable;
 
-public abstract class User implements Serializable
-{
+public abstract class User implements Serializable {
+
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String password;
+    private UserRole role;
+
+    public User(String firstName, String lastName,
+                String email, String password, UserRole role) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
+        this.role = role;
+    }
+
     public String getFirstName() {
         return firstName;
-
     }
 
     public String getLastName() {
@@ -19,19 +33,9 @@ public abstract class User implements Serializable
         return password;
     }
 
-    private String firstName;
-    private String lastName;
-    private String email;
-    private String password;
-
-    public User(String firstName, String lastName, String email, String password) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.password = password;
+    public UserRole getRole() {
+        return role;
     }
 
-
-
-
 }
+
