@@ -1,15 +1,7 @@
 import java.util.List;
 
 public interface UserRepository {
+    void insert(User user);
+    List<User> findAll();
 
-    private void insert(User user){
-
-
-    }
-
-    private List<User> findAll(){
-
-
-        return null;
-    }
 }

@@ -1,4 +1,4 @@
-abstract public class User
+public abstract class User
 {
     public String getFirstName() {
         return firstName;
@@ -27,7 +27,6 @@ abstract public class User
         this.email = email;
         this.password = password;
     }
-
 
 
 

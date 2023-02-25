@@ -1,5 +1,4 @@
-public class Student extends User
-{
+public class Student extends User {
     private int albumNumber;
 
 
@@ -11,6 +10,7 @@ public class Student extends User
     }
 
     public int getAlbumNumber() {
-    return albumNumber;
-}
+        return albumNumber;
+    }
+
 }
