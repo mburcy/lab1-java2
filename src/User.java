@@ -1,7 +1,10 @@
-public abstract class User
+import java.io.Serializable;
+
+public abstract class User implements Serializable
 {
     public String getFirstName() {
         return firstName;
+
     }
 
     public String getLastName() {
